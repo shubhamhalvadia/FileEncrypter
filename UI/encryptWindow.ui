@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>encrypt</class>
+ <widget class="QDialog" name="encrypt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>578</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI Black</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>EXE Locker</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 239, 255)</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>421</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/lock.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/lock.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0, 0, 74)</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="fontLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>-10</y>
+      <width>571</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Showcard Gothic</family>
+      <pointsize>48</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;LK&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#fontLabel {
+	color: RED;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Image/lock.jpg&quot;/&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffaa00;&quot;&gt;FILE ENCRYPTOR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="step1GroupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>381</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox::title {
+	font-size: 32px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Select a FILE to encrypt</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <widget class="QLineEdit" name="locationLineEdit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pickFileButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pickFileButton {
+    border: 2px solid #1976D2;
+    background-color:rgb(0, 0, 127);
+    min-width: 80px;
+	color: white;
+}
+#pickFileButton:hover {
+    background-color:#a4ffa7;
+    
+}
+
+#pickFileButton:pressed {
+    background-color: #0D47A1;
+}
+
+#pickFileButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+#pickFileButton:default {
+    border-color: white; /* make the default button prominent */
+}
+
+#pickFileButton:disabled {
+	background-color: #E3F2FD;
+	border-color: #BBDEFB;
+}</string>
+    </property>
+    <property name="text">
+     <string>Pick EXE File</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="lockButton">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>590</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#lockButton {
+    border: 2px solid #1976D2;
+    background-color:rgb(0, 0, 127);
+    min-width: 80px;
+	color: white;
+}
+#lockButton:hover {
+    background-color:rgb(164, 255, 167);
+    
+}
+
+#lockButton:pressed {
+    background-color: #0D47A1;
+}
+
+#lockButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+#lockButton:default {
+    border-color: white; /* make the default button prominent */
+}
+
+#lockButton:disabled {
+	background-color: #E3F2FD;
+	border-color: #BBDEFB;
+}</string>
+   </property>
+   <property name="text">
+    <string>ENCRYPT</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/lock.png</normaloff>:/images/lock.png</iconset>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>600</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>:/images/iceapps_logo.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>481</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="title">
+    <string>Lock Options</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Enter Password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Re-Enter Password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordAgainLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>190</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(69, 112, 255);
+font-size: 14px;</string>
+    </property>
+    <property name="text">
+     <string>Password and Re-Enter Password must match.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;
+font-size: 14px;</string>
+    </property>
+    <property name="text">
+     <string>If you forget your password, data will not be recoverred.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="encryptButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>500</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#encryptButton {
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+    border: 2px solid #1976D2;
+    background-color:rgb(0, 0, 127);
+    min-width: 80px;
+	color: white;
+}
+#encryptButton:hover {
+    background-color:rgb(164, 255, 167);
+    
+}
+
+#encryptButton:pressed {
+    background-color: #0D47A1;
+}
+
+#encryptButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+#encryptButton:default {
+    border-color: white; /* make the default button prominent */
+}
+
+#encryptButton:disabled {
+	background-color: #E3F2FD;
+	border-color: #BBDEFB;
+}</string>
+   </property>
+   <property name="text">
+    <string>ENCRYPT</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

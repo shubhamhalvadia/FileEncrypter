@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>file1</class>
+ <widget class="QDialog" name="file1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 239, 255)</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-60</x>
+     <y>-10</y>
+     <width>621</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>421</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/lock.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/lock.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0, 0, 74)</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="fontLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>531</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Showcard Gothic</family>
+      <pointsize>48</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;LK&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#fontLabel {
+	color: RED;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Image/lock.jpg&quot;/&gt;&lt;span style=&quot; font-size:36pt; color:#ffaa00;&quot;&gt;file encryptor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="encryptButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#encryptButton {
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+    border: 2px solid #1976D2;
+    background-color:rgb(0, 0, 127);
+    min-width: 80px;
+	color: white;
+}
+#encryptButton:hover {
+    background-color:rgb(164, 255, 167);
+    
+}
+
+#encryptButton:pressed {
+    background-color: #0D47A1;
+}
+
+#encryptButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+#encryptButton:default {
+    border-color: white; /* make the default button prominent */
+}
+
+#encryptButton:disabled {
+	background-color: #E3F2FD;
+	border-color: #BBDEFB;
+}</string>
+   </property>
+   <property name="text">
+    <string>ENCRYPT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="decryptButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>260</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#decryptButton {
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+    border: 2px solid #1976D2;
+    background-color:rgb(0, 0, 127);
+    min-width: 80px;
+	color: white;
+}
+#decryptButton:hover {
+    background-color:rgb(164, 255, 167);
+    
+}
+
+#decryptButton:pressed {
+    background-color: #0D47A1;
+}
+
+#decryptButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+#decryptButton:default {
+    border-color: white; /* make the default button prominent */
+}
+
+#decryptButton:disabled {
+	background-color: #E3F2FD;
+	border-color: #BBDEFB;
+}</string>
+   </property>
+   <property name="text">
+    <string>DECRYPT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;Choose the function you want to perform:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

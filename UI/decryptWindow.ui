@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>decrypt</class>
+ <widget class="QDialog" name="decrypt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>556</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 239, 255)</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-10</y>
+     <width>571</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0, 0, 74)</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>541</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Showcard Gothic</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-size: 30px;
+font: &quot;Segoe UI&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Image/unlock.jpg&quot;/&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffaa00;&quot;&gt;FILE ENCRYPTER&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="step1GroupBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>391</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox::title {
+	font-size: 32px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Select a FILE to decrypt</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <widget class="QLineEdit" name="locationLineEdit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pickFileButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pickFileButton {
+    border: 2px solid #1976D2;
+    background-color:rgb(0, 0, 127);
+    min-width: 80px;
+	color: white;
+}
+#pickFileButton:hover {
+    background-color:#a4ffa7;
+    
+}
+
+#pickFileButton:pressed {
+    background-color: #0D47A1;
+}
+
+#pickFileButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+#pickFileButton:default {
+    border-color: white; /* make the default button prominent */
+}
+
+#pickFileButton:disabled {
+	background-color: #E3F2FD;
+	border-color: #BBDEFB;
+}</string>
+    </property>
+    <property name="text">
+     <string>Pick EXE File</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>391</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="unlockTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>351</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#unlockTextLabel {
+	font-size: 16px;
+	
+	font-family: &quot;Segoe UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Enter password to decrypt file:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="decryptButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>370</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#decryptButton {
+	font: 15pt &quot;MS Shell Dlg 2&quot;;
+    border: 2px solid #1976D2;
+    background-color:rgb(0, 0, 127);
+    min-width: 80px;
+	color: white;
+}
+#decryptButton:hover {
+    background-color:rgb(164, 255, 167);
+    
+}
+
+#decryptButton:pressed {
+    background-color: #0D47A1;
+}
+
+#decryptButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+#decryptButton:default {
+    border-color: white; /* make the default button prominent */
+}
+
+#decryptButton:disabled {
+	background-color: #E3F2FD;
+	border-color: #BBDEFB;
+}</string>
+   </property>
+   <property name="text">
+    <string>DECRYPT</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>decryptButton</zorder>
+  <zorder>step1GroupBox</zorder>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
