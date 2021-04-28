@@ -137,3 +137,4 @@ if __name__ == "__main__":
     ui.setupUi(file1)
     file1.show()
     sys.exit(app.exec_())
+
